@@ -1,0 +1,13 @@
+$ bin/rails generate scaffold food_enquete name:string mail:string age:integer food_id:integer score:integer request:string present_id:integer
+
+             rails g scaffold food_enquete name:string mail:string age:integer food_id:integer score:integer request:string present_id:integer
+             
+$ bin/rails generate scaffold gym_enquete name:string mail:string age:integer course_id:integer score:integer request:string present_id:integer
+
+             rails g scaffold gym_enquete name:string mail:string age:integer course_id:integer score:integer request:string present_id:integer
+
+
+sqlite>  .schema food_enquetes
+CREATE TABLE IF NOT EXISTS "food_enquetes" ("id" integer NOT NULL PRIMARY KEY, "name" varchar NOT NULL, "mail" varchar NOT NULL, "age" integer NOT NULL, "food_id" integer NOT NULL, "score" integer NOT NULL, "request" varchar NOT NULL, "present_id" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL);
+
+CREATE TABLE               "food_enquetes" ("id" integer NOT NULL PRIMARY KEY, "name" varchar NOT NULL, "mail" varchar NOT NULL, "age" integer NOT NULL, "food_id" integer NOT NULL, "score" integer NOT NULL, "request" varchar NOT NULL, "present_id" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL);
