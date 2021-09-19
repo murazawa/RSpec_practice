@@ -226,7 +226,15 @@ RSpec.describe FoodEnquete, type: :model do
       expect(foodEnquete.send(:adult?, 20)).to be_truthy
     end
   end
-
+  
+  #=================================================
+  describe '共通メソッド' do
+    
+    # [Point.3-12-3]共通化するテストケースを定義する
+    it_behaves_like '価格の表示'
+    it_behaves_like '満足度の表示'
+  end
+  #=================================================
 
 end
       #---------ここまで--------------------
